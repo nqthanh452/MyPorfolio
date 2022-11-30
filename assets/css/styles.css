@@ -1,6 +1,8 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+
+
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
@@ -25,6 +27,7 @@
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
+    --font--logo: 'Nerko One', cursive;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
@@ -236,6 +239,7 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color);
   font-weight: var(--font-medium);
+  font-size: unset;
 }
 
 .nav__link:hover{
@@ -566,6 +570,7 @@ img {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   column-gap: 1.5rem;
+  padding-bottom: 1rem; 
 }
 
 .qualification__title{
@@ -576,7 +581,6 @@ img {
 .qualification__subtitle{
   display:inline-block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-1);
 }
 
 .qualification__calendar_{
@@ -911,9 +915,7 @@ img {
     padding: 0 1rem;  
   }
 
-  .nav{
-    height:calc(var(--header-height) +1.5rem);
-  }
+  
   .nav__icon,
   .nav__close,
   .nav__toggle{
