@@ -228,7 +228,7 @@ img {
 }
 
 .nav__list{
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem
 }
 
@@ -642,10 +642,16 @@ img {
 .porfolio__title{
   font-size:var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
+  text-align: center;
 }
 
 .porfolio__description{
   margin-bottom: var(--mb-0-75);
+  text-align: center;
+}
+
+#portfolio__button{
+  text-align: center;
 }
 
 .porfolio__button:hover .button__icon{
