@@ -140,3 +140,26 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Send email js
+var btn = document.getElementById('btn--submit');
+btn.addEventListener('click',function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    var body = 'name:' + name + '<br/> email:' + email +'<br/> subject:' + subject +'<br/> message:' + message;
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "nqthanh452@gmail.com",
+        Password : "ikqkppantrfifeam",
+        To : 'nqthanh452@gmail.com',
+        From : email,
+        Subject : subject,
+        Message : message,
+        Body : body
+    }).then(
+      message => alert(message)
+    );
+})
